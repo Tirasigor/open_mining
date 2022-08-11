@@ -1881,7 +1881,7 @@ textarea {
   .scroll-up {
     width: 64px;
     height: 64px;
-    margin-bottom: 200px;
+    margin-bottom: 5.18vw;
   }
 
   .garant {
@@ -2117,6 +2117,12 @@ textarea {
   }
 
   .tabs__row {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: -webkit-grab;
+    cursor: grab;
     position: relative;
     left: 4vw;
     display: -webkit-box;
@@ -2143,6 +2149,11 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 10vw;
+  }
+
+  .grabbing {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
   }
 
   .item-tabs {
