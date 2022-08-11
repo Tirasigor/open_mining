@@ -261,12 +261,12 @@ textarea {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background-image: url(/img/ic_burger_static.svg);
+  background-image: url(../img/ic_burger_static.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .header__burger > span:hover {
-  background-image: url(/img/ic_burger_hover.svg);
+  background-image: url(../img/ic_burger_hover.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -277,12 +277,12 @@ textarea {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background-image: url(/img/ic_burger_active.svg);
+  background-image: url(../img/ic_burger_active.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .header__burger_active > span:hover {
-  background-image: url(/img/ic_burger_active.svg);
+  background-image: url(../img/ic_burger_active.svg);
 }
 .header__logo {
   margin-right: auto;
@@ -539,7 +539,7 @@ textarea {
   height: 48px;
   background-color: #87b645;
   border-radius: 8px;
-  background-image: url(/img/faq/ic_arrow.svg);
+  background-image: url(../img/faq/ic_arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -548,14 +548,14 @@ textarea {
 }
 .tabs__slider-next:active {
   background-color: #2b69dd;
-  background-image: url(/img/faq/ic_arrow_active.svg);
+  background-image: url(../img/faq/ic_arrow_active.svg);
 }
 .tabs__slider-prev {
   width: 48px;
   height: 48px;
   background-color: #87b645;
   border-radius: 8px;
-  background-image: url(/img/faq/ic_arrow.svg);
+  background-image: url(../img/faq/ic_arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-transform: rotate(180deg);
@@ -566,7 +566,7 @@ textarea {
 }
 .tabs__slider-prev:active {
   background-color: #2b69dd;
-  background-image: url(/img/faq/ic_arrow_active.svg);
+  background-image: url(../img/faq/ic_arrow_active.svg);
 }
 
 .item-tabs {
@@ -1016,7 +1016,7 @@ textarea {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: block;
-  background-image: url(/img/profit/ic_arrow.svg);
+  background-image: url(../img/profit/ic_arrow.svg);
   width: 32px;
   height: 32px;
   pointer-events: none;
@@ -1029,7 +1029,7 @@ textarea {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: block;
-  background-image: url(/img/profit/ic_arrow.svg);
+  background-image: url(../img/profit/ic_arrow.svg);
   width: 32px;
   height: 32px;
   pointer-events: none;
@@ -1085,10 +1085,10 @@ textarea {
   pointer-events: none;
 }
 .dropdown__button:hover::after {
-  background-image: url(/img/faq/ic_arrow_hover.svg);
+  background-image: url(../img/faq/ic_arrow_hover.svg);
 }
 .dropdown__button:active::after {
-  background-image: url(/img/faq/ic_arrow_active.svg);
+  background-image: url(../img/faq/ic_arrow_active.svg);
 }
 .dropdown__button::after {
   -webkit-transition: all 0.2s ease;
@@ -1097,7 +1097,7 @@ textarea {
   position: absolute;
   right: 20px;
   top: 50%;
-  background-image: url(/img/profit/ic_arrow.svg);
+  background-image: url(../img/profit/ic_arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 32px;
@@ -1151,7 +1151,7 @@ textarea {
   right: 20px;
   width: 32px;
   height: 32px;
-  background-image: url(/img/profit/Vector_list.svg);
+  background-image: url(../img/profit/Vector_list.svg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-50%);
@@ -1195,14 +1195,14 @@ textarea {
   background-repeat: no-repeat;
 }
 .garant__card_01 {
-  background-image: url(/img/garant/01.svg);
+  background-image: url(../img/garant/01.svg);
 }
 .garant__card_02 {
-  background-image: url(/img/garant/02.svg);
+  background-image: url(../img/garant/02.svg);
   background-color: #a0c4fa;
 }
 .garant__card_03 {
-  background-image: url(/img/garant/03.svg);
+  background-image: url(../img/garant/03.svg);
   background-color: #ffffff;
 }
 .garant__card-body {
@@ -1222,7 +1222,7 @@ textarea {
   width: 48px;
   height: 48px;
   padding: 14px;
-  background-image: url(/img/garant/ic_arrow.svg);
+  background-image: url(../img/garant/ic_arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1235,19 +1235,19 @@ textarea {
 
 @-webkit-keyframes card-arrow {
   0% {
-    background-image: url(/img/garant/ic_arrow.svg);
+    background-image: url(../img/garant/ic_arrow.svg);
   }
   100% {
-    background-image: url(/img/garant/ic_arrow_ocean.svg);
+    background-image: url(../img/garant/ic_arrow_ocean.svg);
   }
 }
 
 @keyframes card-arrow {
   0% {
-    background-image: url(/img/garant/ic_arrow.svg);
+    background-image: url(../img/garant/ic_arrow.svg);
   }
   100% {
-    background-image: url(/img/garant/ic_arrow_ocean.svg);
+    background-image: url(../img/garant/ic_arrow_ocean.svg);
   }
 }
 .card-arrow {
@@ -1260,7 +1260,7 @@ textarea {
 }
 .card-arrow:active {
   background: #2b69dd;
-  background-image: url(/img/garant/ic_arrow_ocean.svg);
+  background-image: url(../img/garant/ic_arrow_ocean.svg);
   background-position: center;
   width: 48px;
   height: 48px;
@@ -1358,7 +1358,7 @@ textarea {
   visibility: hidden;
   background-color: #87b645;
   border-radius: 8px;
-  background-image: url(/img/scrollup/ic_arrow.svg);
+  background-image: url(../img/scrollup/ic_arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
@@ -1369,7 +1369,7 @@ textarea {
   background-color: #fbac00;
 }
 .scroll-up:active {
-  background-image: url(/img/scrollup/ic_arrow_active.svg);
+  background-image: url(../img/scrollup/ic_arrow_active.svg);
   background-color: #2b69dd;
 }
 
@@ -1423,19 +1423,19 @@ textarea {
   margin-bottom: 40px;
 }
 .faq__accordion-item_active .faq__accordion-trigger:hover::after {
-  background-image: url(/img/faq/ic_arrow_hover.svg);
+  background-image: url(../img/faq/ic_arrow_hover.svg);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 .faq__accordion-item_active .faq__accordion-trigger:active::after {
-  background-image: url(/img/faq/ic_arrow_active.svg);
+  background-image: url(../img/faq/ic_arrow_active.svg);
 }
 .faq__accordion-item_active .faq__accordion-trigger::after {
   content: "";
   position: absolute;
   top: calc(50% - 16px);
   right: 40px;
-  background-image: url(/img/faq/ic_arrow_active.svg);
+  background-image: url(../img/faq/ic_arrow_active.svg);
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;
@@ -1471,10 +1471,10 @@ textarea {
   margin: 0;
 }
 .faq__accordion-trigger:hover::after {
-  background-image: url(/img/faq/ic_arrow_hover.svg);
+  background-image: url(../img/faq/ic_arrow_hover.svg);
 }
 .faq__accordion-trigger:active::after {
-  background-image: url(/img/faq/ic_arrow_active.svg);
+  background-image: url(../img/faq/ic_arrow_active.svg);
 }
 .faq__accordion-trigger::after {
   content: "";
@@ -1483,7 +1483,7 @@ textarea {
   transition: all 0.2s ease;
   top: calc(50% - 16px);
   right: 40px;
-  background-image: url(/img/faq/ic_arrow.svg);
+  background-image: url(../img/faq/ic_arrow.svg);
   width: 32px;
   height: 32px;
   -webkit-transform: translate(-50%);
@@ -1592,7 +1592,7 @@ textarea {
 }
 .contact__checkbox-fake:checked + label span {
   background-color: #87b645;
-  background-image: url(/img/checkbox/Vector_2.svg);
+  background-image: url(../img/checkbox/Vector_2.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1879,6 +1879,8 @@ textarea {
 }
 @media (max-width: 991px) {
   .scroll-up {
+    width: 64px;
+    height: 64px;
     margin-bottom: 200px;
   }
 
