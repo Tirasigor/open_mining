@@ -88,29 +88,29 @@ input[type=number] {
 
 @font-face {
   font-family: "Gotham Pro";
-  src: url(/"../fonts/gothampro_medium.eot");
-  src: local("☺"), url(/"../fonts/gothampro_medium.woff") format("woff"), url(/"../fonts/gothampro_medium.ttf") format("truetype"), url(/"../fonts/gothampro_medium.svg") format("svg");
+  src: url("../fonts/gothampro_medium.eot");
+  src: local("☺"), url("../fonts/gothampro_medium.woff") format("woff"), url("../fonts/gothampro_medium.ttf") format("truetype"), url("../fonts/gothampro_medium.svg") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url(/"../fonts/gothampro_bold.eot");
-  src: local("☺"), url(/"../fonts/gothampro_bold.woff") format("woff"), url(/"../fonts/gothampro_bold.ttf") format("truetype"), url(/"../fonts/gothampro_bold.svg") format("svg");
+  src: url("../fonts/gothampro_bold.eot");
+  src: local("☺"), url("../fonts/gothampro_bold.woff") format("woff"), url("../fonts/gothampro_bold.ttf") format("truetype"), url("../fonts/gothampro_bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url(/"../fonts/gothampro.eot");
-  src: local("☺"), url(/"../fonts/gothampro.woff") format("woff"), url(/"../fonts/gothampro.ttf") format("truetype"), url(/"../fonts/gothampro.svg") format("svg");
+  src: url("../fonts/gothampro.eot");
+  src: local("☺"), url("../fonts/gothampro.woff") format("woff"), url("../fonts/gothampro.ttf") format("truetype"), url("../fonts/gothampro.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url(/"../fonts/gothampro_light.eot");
-  src: local("☺"), url(/"../fonts/gothampro_light.woff") format("woff"), url(/"../fonts/gothampro_light.ttf") format("truetype"), url(/"../fonts/gothampro_light.svg") format("svg");
+  src: url("../fonts/gothampro_light.eot");
+  src: local("☺"), url("../fonts/gothampro_light.woff") format("woff"), url("../fonts/gothampro_light.ttf") format("truetype"), url("../fonts/gothampro_light.svg") format("svg");
   font-weight: 300;
   font-style: normal;
 }
@@ -1426,8 +1426,6 @@ textarea {
   background-image: url(/img/faq/ic_arrow_hover.svg);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-filter: hue-rotate(0deg);
-          filter: hue-rotate(0deg);
 }
 .faq__accordion-item_active .faq__accordion-trigger:active::after {
   background-image: url(/img/faq/ic_arrow_active.svg);
@@ -2186,6 +2184,9 @@ textarea {
     top: 12px;
   }
 
+  .faq__accordion-item_active .faq__accordion-trigger::after {
+    right: 20px;
+  }
   .faq__accordion-trigger::after {
     right: 20px;
   }
