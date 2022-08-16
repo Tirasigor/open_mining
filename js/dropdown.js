@@ -27,7 +27,6 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 	dropDownListItems.forEach(function (listItem) {
 		listItem.addEventListener('click', function (e) {
 			for (let i = 0; i < dropDownList.children.length; i++) {
-				console.log(9);
 				dropDownList.children[i].classList.remove('dropdown__list-item_active');
 			}
 			e.stopPropagation();

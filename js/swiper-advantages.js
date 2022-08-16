@@ -71,11 +71,11 @@ function touchEndA() {
 
 		const movedBy = currentTranslateA - prevTranslateA
 
-		if (movedBy < -30 && currentIndexA < 1) {
+		if (movedBy < -100 && currentIndexA < 1) {
 			currentIndexA += 1;
 		}
 
-		if (movedBy > 30 && currentIndexA > 0) {
+		if (movedBy > 100 && currentIndexA > 0) {
 			currentIndexA -= 1;
 		}
 

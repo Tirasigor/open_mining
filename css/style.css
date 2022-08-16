@@ -12,6 +12,10 @@
           box-sizing: border-box;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html,
 body {
   height: 100%;
@@ -255,7 +259,11 @@ textarea {
           transform: translateY(-20%);
   pointer-events: none;
 }
+.header__burger {
+  display: block;
+}
 .header__burger > span {
+  pointer-events: none;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   display: inline-block;
@@ -1350,7 +1358,7 @@ textarea {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   right: 2.08vw;
-  bottom: 50px;
+  bottom: 1vw;
   z-index: 1000;
   width: 80px;
   height: 80px;
@@ -1878,10 +1886,14 @@ textarea {
   }
 }
 @media (max-width: 991px) {
+  .page {
+    contain: none;
+    overflow: hidden;
+  }
+
   .scroll-up {
     width: 64px;
     height: 64px;
-    margin-bottom: 5.18vw;
   }
 
   .garant {
@@ -1953,6 +1965,7 @@ textarea {
             align-items: center;
   }
   .header__burger-menu {
+    width: 300px;
     background-color: #ffffff;
     position: absolute;
     top: 48px;
@@ -1970,10 +1983,13 @@ textarea {
     opacity: 1;
   }
   .header__burger-link {
+    font-weight: 500;
+    font-size: 18px;
     overflow: hidden;
     display: block;
     min-width: 75px;
-    padding: 1vw;
+    padding: 25px 0;
+    text-align: center;
   }
   .header__burger-link:nth-child(even) {
     background-color: #87b645;
