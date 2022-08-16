@@ -36,6 +36,10 @@ window.oncontextmenu = function (event) {
 	return false;
 }
 
+window.onresize = touchEnd;
+window.onresize = touchMove;
+window.onresize = touchStart;
+
 function touchStart(index) {
 	//	if (screen.width <= 767)
 	if (window.innerWidth <= 767) {
