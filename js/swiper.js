@@ -37,7 +37,8 @@ window.oncontextmenu = function (event) {
 }
 
 function touchStart(index) {
-	if (screen.width <= 767) {
+	//	if (screen.width <= 767)
+	if (window.innerWidth <= 767) {
 		return function (event) {
 			currentIndex = index;
 			startPos = getPositionX(event);
@@ -50,7 +51,8 @@ function touchStart(index) {
 }
 
 function touchEnd() {
-	if (screen.width <= 767) {
+	//	if (screen.width <= 767)
+	if (window.innerWidth <= 767) {
 		isDragging = false;
 		cancelAnimationFrame(animationId);
 
@@ -71,7 +73,8 @@ function touchEnd() {
 }
 
 function touchMove(event) {
-	if (screen.width <= 767) {
+	//	if (screen.width <= 767)
+	if (window.innerWidth <= 767) {
 		if (isDragging) {
 			const currentPosition = getPositionX(event);
 			currentTranslate = prevTranslate + currentPosition - startPos;
