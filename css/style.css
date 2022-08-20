@@ -1079,7 +1079,7 @@ textarea {
   position: relative;
   border: 1px solid #d7d7d7;
   font-family: "Gotham Pro";
-  display: inline-block;
+  display: block;
   background-color: #ffffff;
   text-align: left;
   max-height: 72px;
@@ -1161,7 +1161,12 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 16px;
+}
+.dropdown__list-item > * + * {
+  margin-left: 16px;
+}
+.dropdown__list-item > * + *:first-child {
+  margin-left: 0;
 }
 .dropdown__list-item:hover {
   background-color: #fbac00;
