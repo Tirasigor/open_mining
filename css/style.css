@@ -390,8 +390,13 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2.8125vw;
   min-height: 56px;
+}
+.main-screen__btns > * + * {
+  margin-left: 2.8125vw;
+}
+.main-screen__btns > * + *:first-child {
+  margin-left: 0;
 }
 .main-screen__btn {
   padding: 0;
@@ -673,7 +678,6 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 32px;
   width: 100%;
   max-width: 688px;
   max-height: 208px;
@@ -682,6 +686,12 @@ textarea {
   border-radius: 12px;
   position: relative;
   z-index: 2;
+}
+.advantages__item > * + * {
+  margin-left: 32px;
+}
+.advantages__item > * + *:first-child {
+  margin-left: 32px;
 }
 .advantages__item::before {
   content: "";
@@ -1086,8 +1096,13 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 16px;
   margin-bottom: 27px;
+}
+.dropdown__button > * + * {
+  margin-left: 16px;
+}
+.dropdown__button > * + *:first-child {
+  margin-left: 0;
 }
 .dropdown__button span {
   pointer-events: none;
@@ -1573,10 +1588,15 @@ textarea {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  gap: 25px;
-  margin-left: 50px;
+  margin-left: 25px;
   margin-bottom: 55px;
   position: relative;
+}
+.contact__agree > * + * {
+  margin-left: 25px;
+}
+.contact__agree > * + *:first-child {
+  margin-left: 0;
 }
 .contact__checkbox-fake {
   position: absolute;
@@ -1750,7 +1770,12 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 87px;
+}
+.footer__social-icon > * + * {
+  margin-left: 87px;
+}
+.footer__social-icon > * + *:first-child {
+  margin-left: 0;
 }
 .dropdown__input-hidden {
   width: 100%;
@@ -2121,7 +2146,14 @@ textarea {
 }
 @media (max-width: 767px) {
   .garant__cards {
-    gap: 24px;
+    gap: 0;
+  }
+  .garant__cards > * + * {
+    margin-top: 24px;
+    margin-left: 0;
+  }
+  .garant__cards > * + *:first-child {
+    margin-top: 0;
   }
 
   .profit__button {
@@ -2148,9 +2180,14 @@ textarea {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
-    gap: calc(8vw - 20px);
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
+  }
+  .tabs__row > * + * {
+    margin-left: calc(8vw - 20px);
+  }
+  .tabs__row > * + *:first-child {
+    margin-left: 0;
   }
   .tabs__column {
     -webkit-box-flex: 0;
@@ -2230,6 +2267,10 @@ textarea {
   }
 }
 @media (max-width: 575px) {
+  .opportunities > a {
+    font-size: 14px;
+  }
+
   .footer__row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
