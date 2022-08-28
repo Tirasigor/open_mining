@@ -16,9 +16,10 @@ function init() {
 	setSliderPosition();
 }
 
+
 slides.forEach((slide, index) => {
+
 	const slideImage = slide.querySelector('img');
-	slideImage.addEventListener('dragstart', (e) => e.preventDefault())
 
 	slide.addEventListener('touchstart', touchStart(index))
 	slide.addEventListener('touchend', touchEnd)
@@ -28,7 +29,7 @@ slides.forEach((slide, index) => {
 	slide.addEventListener('mouseup', touchEnd)
 	slide.addEventListener('mouseleave', touchEnd)
 	slide.addEventListener('mousemove', touchMove)
-})
+});
 
 window.oncontextmenu = function (event) {
 	event.preventDefault();
@@ -36,12 +37,23 @@ window.oncontextmenu = function (event) {
 	return false;
 }
 
-window.onresize = touchEnd;
-window.onresize = touchMove;
-window.onresize = touchStart;
+window.addEventListener('resize', () => {
+	slides.forEach((slide, index) => {
+
+		const slideImage = slide.querySelector('img');
+
+		slide.addEventListener('touchstart', touchStart(index))
+		slide.addEventListener('touchend', touchEnd)
+		slide.addEventListener('touchmove', touchMove)
+
+		slide.addEventListener('mousedown', touchStart(index))
+		slide.addEventListener('mouseup', touchEnd)
+		slide.addEventListener('mouseleave', touchEnd)
+		slide.addEventListener('mousemove', touchMove)
+	});
+})
 
 function touchStart(index) {
-	//	if (screen.width <= 767)
 	if (window.innerWidth <= 767) {
 		return function (event) {
 			currentIndex = index;
@@ -55,7 +67,6 @@ function touchStart(index) {
 }
 
 function touchEnd() {
-	//	if (screen.width <= 767)
 	if (window.innerWidth <= 767) {
 		isDragging = false;
 		cancelAnimationFrame(animationId);
@@ -77,7 +88,6 @@ function touchEnd() {
 }
 
 function touchMove(event) {
-	//	if (screen.width <= 767)
 	if (window.innerWidth <= 767) {
 		if (isDragging) {
 			const currentPosition = getPositionX(event);

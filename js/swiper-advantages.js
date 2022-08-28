@@ -2,6 +2,10 @@ const sliderA = document.querySelector('.advantages__body');
 const slidesA = Array.from(document.querySelectorAll('.advantages__item'));
 const slidesAtext = Array.from(document.querySelectorAll('.advantages__text'));
 
+//console.log(sliderA);
+//console.log(slidesA);
+//console.log(slidesAtext);
+
 let isDraggingA = false;
 let startPosA = 0;
 let currentTranslateA = 0;
@@ -12,14 +16,30 @@ let currentIndexA = 0;
 
 window.addEventListener('resize', init);
 
-function init(){
+window.addEventListener('resize', () => {
+	slidesAtext.forEach((slide, index) => {
+		const slideImage = slide.querySelector('img');
+		//	slideImage.addEventListener('dragstart', (e) => e.preventDefault());
+
+		slide.addEventListener('touchstart', touchStartA(index));
+		slide.addEventListener('touchend', touchEndA);
+		slide.addEventListener('touchmove', touchMoveA);
+
+		slide.addEventListener('mousedown', touchStartA(index));
+		slide.addEventListener('mouseup', touchEndA);
+		slide.addEventListener('mouseleave', touchEndA);
+		slide.addEventListener('mousemove', touchMoveA);
+	})
+})
+
+function init() {
 	currentTranslateA = 0;
 	setsliderAPosition();
 }
 
 slidesAtext.forEach((slide, index) => {
 	const slideImage = slide.querySelector('img');
-//	slideImage.addEventListener('dragstart', (e) => e.preventDefault());
+	//	slideImage.addEventListener('dragstart', (e) => e.preventDefault());
 
 	slide.addEventListener('touchstart', touchStartA(index));
 	slide.addEventListener('touchend', touchEndA);
@@ -33,7 +53,7 @@ slidesAtext.forEach((slide, index) => {
 
 slidesA.forEach((slide, index) => {
 	const slideImage = slide.querySelector('img');
-	slideImage.addEventListener('dragstart', (e) => e.preventDefault());
+	//	slideImage.addEventListener('dragstart', (e) => e.preventDefault());
 
 	slide.addEventListener('touchstart', touchStartA(index));
 	slide.addEventListener('touchend', touchEndA);
@@ -52,7 +72,7 @@ window.oncontextmenu = function (event) {
 }
 
 function touchStartA(index) {
-	if (screen.width <= 767) {
+	if (window.innerWidth <= 767) {
 		return function (event) {
 			currentIndexA = index;
 			startPosA = getPositionXA(event);
@@ -65,7 +85,7 @@ function touchStartA(index) {
 }
 
 function touchEndA() {
-	if (screen.width <= 767) {
+	if (window.innerWidth <= 767) {
 		isDraggingA = false;
 		cancelAnimationFrame(animationIdA);
 
@@ -86,7 +106,7 @@ function touchEndA() {
 }
 
 function touchMoveA(event) {
-	if (screen.width <= 767) {
+	if (window.innerWidth <= 767) {
 		if (isDraggingA) {
 			const currentPosition = getPositionXA(event);
 			currentTranslateA = prevTranslateA + currentPosition - startPosA;
@@ -113,7 +133,7 @@ function setsliderAPosition() {
 }
 
 function setPositionByIndexA() {
-	if (isFirst){
+	if (isFirst) {
 		isFirst = false;
 		currentIndexA = 0;
 	} else {
