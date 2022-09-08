@@ -36,6 +36,9 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 			dropDownList.classList.remove('dropdown__list_visible');
 			dropdown.classList.remove('dropdown_active')
 			listItem.classList.add('dropdown__list-item_active');
+			document.querySelectorAll('.crypt').forEach((e) => {
+				e.innerHTML = document.querySelector('.dropdown__button').querySelector('span').innerHTML;
+			});
 		});
 	});
 

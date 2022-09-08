@@ -1,5 +1,8 @@
 const rangeSliderMass = document.querySelectorAll('.label-item__slider');
 
+let power = 50;
+let days = 180;
+
 const setRangeSlider = (i, value) => {
 	let sliderValue = value;
 
@@ -20,12 +23,17 @@ if (rangeSliderMass[0]){
 	const input0 = document.getElementById('input-0');
 
 	rangeSliderMass[0].noUiSlider.on('update', function(values, handle){
-		input0.value = Math.round(values)
+		input0.value = Math.round(values);
+		power = input0.value;
+		document.querySelector('.number').innerHTML = power * days * 10;
+		document.querySelector('.crypt-profit').innerHTML = ((power / 180) * 10 / 2).toFixed(2);
 	});
 
 	input0.addEventListener('change', (e) => {
 		rangeSliderMass[0].noUiSlider.set(e.currentTarget.value);
 	})
+
+
 
 }
 
@@ -43,7 +51,9 @@ if (rangeSliderMass[1]){
 	const input1 = document.getElementById('input-1');
 
 	rangeSliderMass[1].noUiSlider.on('update', function(values, handle){
-		input1.value = Math.round(values)
+		input1.value = Math.round(values);
+		days = input1.value;
+		document.querySelector('.number').innerHTML = power * days * 10;
 	});
 
 	input1.addEventListener('change', (e) => {
