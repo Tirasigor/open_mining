@@ -1306,6 +1306,8 @@ textarea {
           justify-content: center;
 }
 .hashrate img {
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 912px;
   width: 91.11vw;
 }
